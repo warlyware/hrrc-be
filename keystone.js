@@ -30,6 +30,8 @@ keystone.init({
 // Load your project's Models
 keystone.import('models');
 
+keystone.set('cors allow origin', true);
+
 // Setup common locals for your templates. The following are required for the
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
 // for each request) should be added to ./routes/middleware.js
